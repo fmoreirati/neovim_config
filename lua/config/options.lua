@@ -7,8 +7,8 @@ vim.g.lazyvim_picker = "telescope"
 require("telescope").setup({
   defaults = {
     file_ignore_patterns = {
-      ".git/[^ĥ]",
-      "node%_modules/.*",
+      ".git/*",
+      "node%_modules/*",
     },
     path_display = {
       "filename_first",
