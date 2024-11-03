@@ -37,11 +37,18 @@ return {
       end,
     },
 
+    {
+      "EdenEast/nightfox.nvim",
+      options = {
+        transparent = true,
+      },
+    },
+
     -- Configure LazyVim to load gruvbox
     {
       "LazyVim/LazyVim",
       opts = {
-        colorscheme = "gruvbox",
+        colorscheme = "nightfox",
       },
     },
   },
