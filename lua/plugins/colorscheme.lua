@@ -39,7 +39,8 @@ return {
 
     {
       "EdenEast/nightfox.nvim",
-      options = {
+      opts = {
+        fox = "nordfox",
         transparent = true,
       },
     },
