@@ -7,8 +7,9 @@ vim.opt.autoread = true
 vim.opt.writebackup = false
 vim.opt.wrap = true
 vim.opt.linebreak = true
+vim.opt.termguicolors = true
 
-vim.g.lazyvim_picker = "telescope"
+--vim.g.lazyvim_picker = "telescope"
 
 require("telescope").setup({
   defaults = {

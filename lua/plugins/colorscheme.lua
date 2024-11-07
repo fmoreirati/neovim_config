@@ -3,6 +3,7 @@ return {
     {
       "folke/tokyonight.nvim",
       enabled = true,
+      lazy = true,
       opts = {
         style = "night",
         transparent = true,
@@ -17,11 +18,12 @@ return {
     {
       "ellisonleao/gruvbox.nvim",
       enabled = true,
+      lazy = true,
       opts = {
         style = "dark",
         transparent_mode = true,
         priority = 1000,
-        transparent_bg = 1,
+        --transparent_bg = 1,
       },
     },
 
@@ -39,17 +41,12 @@ return {
 
     {
       "EdenEast/nightfox.nvim",
-      opts = {
-        fox = "nordfox",
-        transparent = true,
-      },
     },
 
-    -- Configure LazyVim to load gruvbox
     {
       "LazyVim/LazyVim",
       opts = {
-        colorscheme = "nightfox",
+        colorscheme = "duskfox",
       },
     },
   },
