@@ -41,6 +41,29 @@ return {
 
     {
       "EdenEast/nightfox.nvim",
+      enabled = true,
+      config = function()
+        require("nightfox").setup({
+          options = {
+            transparent = true,
+            styles = {
+              comments = "italic",
+              keywords = "bold",
+              types = "italic,bold",
+            },
+          },
+        })
+      end,
+    },
+
+    {
+      "neanias/everforest-nvim",
+      config = function()
+        require("everforest").setup({
+          transparent = true,
+          transparent_background_level = 1,
+        })
+      end,
     },
 
     {

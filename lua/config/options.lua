@@ -9,7 +9,7 @@ vim.opt.wrap = true
 vim.opt.linebreak = true
 vim.opt.termguicolors = true
 
---vim.g.lazyvim_picker = "telescope"
+vim.g.lazyvim_picker = "telescope"
 
 require("telescope").setup({
   defaults = {
@@ -20,11 +20,17 @@ require("telescope").setup({
     path_display = {
       "filename_first",
     },
+    scroll_strategy = "limit",
   },
   pickers = {
     find_files = {
       hidden = true,
+      find_command = { "rg", "--files", "--hidden", "--glob", "!**/.git/*" },
     },
-    find_command = { "rg", "--files", "--hidden", "--glob", "!**/.git/*" },
+  },
+  extensions = {
+    file_browser = {
+      path = "%:p:h",
+    },
   },
 })
